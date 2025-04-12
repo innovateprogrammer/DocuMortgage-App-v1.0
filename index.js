@@ -4,11 +4,11 @@ const path = require('path');
 // const { OpenAI } = require("openai");
 //npm install @google/generative-ai
 const { GoogleGenerativeAI } = require("@google/generative-ai");
-
+/*
 const client = new OpenAI({
 	baseURL: "https://router.huggingface.co/novita/v3/openai",
 	apiKey: "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",
-});
+});*/
 
 
 const genAI = new GoogleGenerativeAI("AIzaSyA3pmJWrLNkqoZz4bLGs9BCFCYHt01pXdo");
