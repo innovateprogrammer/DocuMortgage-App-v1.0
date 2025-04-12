@@ -15,7 +15,7 @@ document.getElementById('generate').addEventListener('click',()=>{
     });
 
     async function fetchData(bank) {
-        const url = 'http://localhost:3000/api/data';
+        const url = 'https://documortgage-app-v1-0.onrender.com/api/data';
         try {
             await fetch(url, {
                 method: 'POST',              // Specify the method as POST
