@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DocuMortgage App v1.0</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!--<script src="https://unpkg.com/lucide@latest"></script> -->
+  <link rel="icon" href="icon.jpg">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <div class="max-w-6xl mx-auto p-6">
+    <!-- Header -->
+    <div class="logo-container">
+      <img src="icon.jpg" alt="Logo" class="logo-image">
+    </div>
+    <div class="text-center mb-10">
+      <h1 class="text-4xl font-bold mb-2">📄 AI Mortgage Document Requirements</h1>
+      <p class="text-lg text-gray-600">Checklist of documents required for mortgage processing based in Gemini-2.0-Flash</p>
+      <br>
+      <input
+  type="text" id="bank"
+  placeholder="Enter Bank Name"
+  class="w-full p-2 border border-blue-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400 bg-blue-50 text-blue-900 placeholder-blue-400"
+/>
+<br>
+<br>
+<br>
+      <button id="generate" class="cursor-pointer bg-gradient-to-b from-indigo-500 to-indigo-600 shadow-[0px_4px_32px_0_rgba(99,102,241,.70)] px-6 py-3 rounded-xl border-[1px] border-slate-500 text-white font-medium group">
+        <div class="b1" id="b1">Generate</div>
+        <div class="b2" id="b2">
+          <svg
+          class="container"
+          viewBox="0 0 35 35"
+          height="35"
+          width="35"
+        >
+          <rect 
+            class="track"
+            x="2.5" 
+            y="2.5" 
+            fill="none" 
+            stroke-width="5px" 
+            width="32.5" 
+            height="32.5"
+          />
+          <rect 
+            class="car"
+            x="2.5" 
+            y="2.5" 
+            fill="none" 
+            stroke-width="5px" 
+            width="32.5" 
+            height="32.5"
+            pathlength="100"
+          />
+        </svg>
+        </div>
+      </button>
+    </div>
+
+    <!-- Document Checklist -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+        <div id="boxes" class="boxes">
+          <div class="box">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+          </div>
+          <div class="box">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+          </div>
+          <div class="box">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+          </div>
+          <div class="box">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+          </div>
+        </div>
+        <div class="output" id="output">
+        </div>
+    </div>
+</div>
+    
+
+    <!-- Footer Note -->
+    <div class="text-sm text-gray-500 text-center flex items-center justify-center gap-2">
+      <i data-lucide="check-circle" class="text-green-500" width="16" height="16"></i>
+      All your data is secure and encrypted.
+    </div>
+  </div>
+
+  <!-- <script>
+    lucide.createIcons();
+  </script> -->
+  <script src="app.js"></script>
+</body>
+</html>
